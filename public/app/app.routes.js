@@ -3,15 +3,15 @@ define('routes',function(){
     function routeConfig($locationProvider, $stateProvider, $urlRouterProvider){
        
         $stateProvider
-        .state('page1', {
-          url: '/page1',
-          template: '<page-one ></page-one>',
+        .state('dashboard', {
+          url: '/dashboard',
+          template: '<dashboard-comp></dashboard-comp>',
         })
         // .state('page2', {
         //     url: '/page2',
         //     template: '<page-two qlik-id = "xePs"></page-two>',
         //   })
-        $urlRouterProvider.otherwise('/page1');
+        $urlRouterProvider.otherwise('/dashboard');
     }
     routeConfig.$inject = ['$locationProvider', '$stateProvider', '$urlRouterProvider'];
     return routeConfig;

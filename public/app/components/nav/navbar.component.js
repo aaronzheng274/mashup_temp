@@ -1,8 +1,8 @@
 define( 'navBar',function () {
     
         function navBar() {
-            navBarController.$inject = ['dataService','qlikService'];
-            function navBarController(dataService,qlikService) {
+            navBarController.$inject = [];
+            function navBarController() {
                 var vm = this;
            
                 init();

@@ -1,13 +1,44 @@
+font-face {
+  font-family: 'QlikView Sans';
+  src: url(./assets/fonts/lui-icons.ttf) format('truetype');
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'QlikView Sans';
+  src: url(./assets/fonts/qlikview-sans-bold.ttf) format('truetype');
+  font-weight: bold;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'QlikView Sans';
+  src: url(./assets/fonts/qlikview-sans.ttf) format('truetype');
+  font-weight: normal;
+  font-style: italic;
+}
+
+@font-face {
+  font-family: 'QlikView Sans';
+  src: url(./assets/fonts/qlikview-sans-bold.ttf) format('truetype');
+  font-weight: bold;
+  font-style: italic;
+}
+
+@font-face {
+  font-family: 'LUI icons';
+  src: url(./assets/fonts/lui-icons.ttf) format('truetype');
+}
 .topnav {
-    overflow: hidden;
-    background: #4477aa;
-    background: -moz-linear-gradient(left, #ffffff 0%, #4477aa 100%);
-    background: -webkit-linear-gradient(left, #ffffff 0%, #4477aa 100%);
-    background: -o-linear-gradient(left, #ffffff 0%, #4477aa 100%);
-    background: -ms-linear-gradient(left, #ffffff 0%, #4477aa 100%);
-    background: linear-gradient(to right, #ffffff 0%, #4477aa 100%);
-    font-weight: bold;
-    
+  overflow: hidden;
+  background: #4477aa;
+  background: -moz-linear-gradient(left, #ffffff 0%, #4477aa 100%);
+  background: -webkit-linear-gradient(left, #ffffff 0%, #4477aa 100%);
+  background: -o-linear-gradient(left, #ffffff 0%, #4477aa 100%);
+  background: -ms-linear-gradient(left, #ffffff 0%, #4477aa 100%);
+  background: linear-gradient(to right, #ffffff 0%, #4477aa 100%);
+  font-weight: bold;
   }
   
   .topnav a {
@@ -25,6 +56,54 @@
   } */
   
   .topnav a.active {
-    /* background-color: #4CAF50; */
+    background-color: #4CAF50;
     color: white;
+  }
+
+  .pivotContainer {
+    display: flex;
+    height: 850px;
+    margin: auto;
+  }
+
+  #icuPivot {
+    width: 60%;
+    float: left;
+  }
+
+  #resPivot {
+    width: 40%;
+  }
+
+  .qv-object-header.thin {
+    display: none;
+  }
+  .qv-selections-pager>.buttons {
+    display: none;
+  }
+  
+  .qv-selections-pager>.buttons-end {
+    display: none;
+  }
+  
+  .wrap {
+    background-color: #4477aa;
+    background: -moz-linear-gradient(left, #ffffff 0%, #4477aa 100%);
+    background: -webkit-linear-gradient(left, #ffffff 0%, #4477aa 100%);
+    background: -o-linear-gradient(left, #ffffff 0%, #4477aa 100%);
+    background: -ms-linear-gradient(left, #ffffff 0%, #4477aa 100%);
+    background: linear-gradient(to right, #ffffff 0%, #4477aa 100%);
+    border-bottom: 1px solid rgba(0, 0, 0, 0.1);
+  }
+  
+  .text-wrap>.name {
+    color: black;
+  }
+  
+  .text-wrap>.values {
+    color: black;
+  }
+  
+  .text > .values {
+    color: black;
   }

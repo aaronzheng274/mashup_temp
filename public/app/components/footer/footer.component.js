@@ -1,8 +1,8 @@
 define( 'footer',function () {
     
         function footerComponent() {
-            footerComponentController.$inject = ['dataService','qlikService'];
-            function footerComponentController(dataService,qlikService) {
+            footerComponentController.$inject = [];
+            function footerComponentController() {
                 var vm = this;
            
                 init();
